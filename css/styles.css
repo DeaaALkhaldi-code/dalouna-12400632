@@ -1,0 +1,422 @@
+/* 
+ css/styles.css 
+ Student Name: Deaa AL-khaldi
+ Student Id: 12400632
+*/
+
+:root {
+    --bg: #faf7f2;
+    --text: hwb(0 12% 88%);
+    --muted: #6b6b6b;
+    --brand: #216869;
+    --brand-2: #49a078;
+    --card: #ffffff;
+    --border: #e9e3db;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+.site-header {
+    background: var(--border);
+    box-shadow: 0 2px 10px 
+    rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.site-nav {
+    max-width: 1200px;
+    max-height: 30px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--brand);
+}
+.header-links  {
+    font-size: 1.1rem;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.header-links a  {
+    text-decoration: none;
+    color: var(--brand);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.header-links a:hover {
+    color: var(--brand-2);
+}
+.hero {
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    min-height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--card); 
+    padding:  2rem;
+    margin-top: 60px ;
+}
+.hero-content {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-top{
+    background-color: var(--brand-2);
+    min-width: 255px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.hero-top p{
+    color: var(--brand);
+    font-size: 0.9rem;
+    padding: 5px 5px;
+    margin: unset;
+}
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+.button-class {
+    background: var(--brand);
+    min-width: 150px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.button-class p{
+    color: var(--card);
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: unset;
+}
+.section-padding {
+    padding: 5rem 2rem;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--brand);
+}
+
+.section-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.about-container {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    display: flex;
+    text-align:start;
+    justify-content: start;
+    flex: 1;
+    min-height: 300px;
+    width: 50%;
+}
+.about-h {
+    margin-bottom: 1.5rem;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 37px;
+    margin: unset;
+}
+.about-p1 {
+    font-size: 1.2rem;
+    font-style: normal;
+    margin: 1rem 0;
+    color: var(--text);
+}
+.about-p2{
+    font-size: 1rem;
+    font-style: normal;
+    margin: 1rem 0;
+    color: var(--muted);
+}
+.about-food { 
+    background-color: var(--card);
+    display: flex;
+    gap: 14px; 
+    padding-top: 20px;
+}
+.about-food p{
+    background-color: var(--card);
+    border-radius: 30px;
+    padding: 8px 15px;
+    border: 1px solid var(--text);
+    font-size: 12px;
+    font-style: normal;
+    margin: 0;
+    color: var(--text);
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+.menu-container{
+     background: var(--card);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    text-align: start;
+    width: 46.5%;
+    margin: 0;;
+}
+.menuCards{
+    display: flex;
+    gap: 15px;
+}
+.menu-item{
+    border-bottom: 1px dashed var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.menu-item.last{
+    border-bottom: unset;
+}
+.menu-subItem{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.dolar{
+    color: var(--brand);
+    font-size: 21px;
+    font-weight: bold;
+}
+.text1{
+    font-size: 20px;
+    font-weight: 600;
+    margin: unset;
+    color: var(--text);
+}
+.text2{
+    font-size: 16px;
+    font-weight: 600;
+    margin: unset;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+.menu-p{
+    font-size: 14px;
+    color: var(--muted);
+    text-align: start;
+    margin-top: 10px;
+}
+.map-container{
+  width: 53%;
+  min-height: 177px;
+  border-radius: 10px;
+}
+.map-container img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.hours h2{
+    font-size:30px ;
+    font-weight: 700;
+}
+.content h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.find h2{
+    font-size:30px ;
+    font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1185px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .about-container,
+  .find-container,
+  .menu-container,
+  .map-container {
+    width: 100%;
+    max-width: -webkit-fill-available;
+  }
+  .menuCards,.section-about,.hours-content{
+    display: block!important;
+  }
+  .hero,.find-container,.map{
+    width: 100%!important;
+    max-width: -webkit-fill-available;
+  }
+  .header-links{
+    padding: unset;
+  }
+  .site-nav{
+    flex-direction: column;
+    max-height: unset;
+  }
+  .menu-container,.about-container,.find-container,.hero{
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0.8rem;
+  }
+  .about-container,
+  .find-container,
+  .menu-container,
+  .map-container {
+    width: 100%;
+    max-width: -webkit-fill-available;
+  }
+  .menuCards,.section-about,.hours-content{
+    display: block!important;
+  }
+  .hero,.find-container,.map{
+    width: 100%!important;
+    max-width: -webkit-fill-available;
+  }
+  .header-links{
+    padding: unset;
+  }
+  .site-nav{
+    flex-direction: column;
+    max-height: unset;
+  }
+  .menu-container,.about-container,.find-container,.hero{
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .about-container,
+  .find-container,
+  .menu-container,
+  .map-container {
+    width: 100%;
+    max-width: -webkit-fill-available;
+  }
+  .menuCards,.section-about,.hours-content{
+    display: block!important;
+  }
+  .hero,.find-container,.map{
+    width: 100%!important;
+    max-width: -webkit-fill-available;
+  }
+  .header-links{
+    padding: unset;
+  }
+  .site-nav{
+    flex-direction: column;
+    max-height: unset;
+  }
+  .menu-container,.about-container,.find-container,.hero{
+    margin-bottom: 15px;
+  }
+}
+
+.hours-content{
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    min-height: 240px;
+} 
+.phone{
+    color: var(--text);
+    text-emphasis: none;
+    font-weight: bold;
+}
+.email{
+    color: var(--brand-2);
+    text-decoration: none;
+}
+.email:hover{
+    text-decoration: underline;
+}
+.map{
+    width: 53%;
+    max-height: 250px;
+    border-radius: 10px;
+}
+
+.find-container {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    display: flex;
+    text-align:start;
+    justify-content: start;
+    width: 50%;
+    max-height: 218px;
+}
+.img {
+    max-height: 250px;
+    margin-top:50px ;
+    align-self: center;
+}
+.footer1{
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    padding: 30px 0;
+    border-top: var(--muted) 0.6px solid;
+}
+.footer1 a{
+    font-weight: 600;
+    color: var(--brand-2);
+    text-decoration: none;
+}
+.footer1 p{
+    margin: 0;
+}
